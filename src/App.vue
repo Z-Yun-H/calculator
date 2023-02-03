@@ -96,8 +96,8 @@ const counted = () => {
   let rep = currentCalculate.value.replace('X', '*').replace(',', '.')
   let lastCalculate = currentCalculate.value
   let currentCalt = eval(rep).toString()
-  addHistroy(lastCalculate, currentCalt.replace('.', ','))
-  currentCalculate.value = currentCalt.replace('.', ',')
+  addHistroy(lastCalculate, currentCalt)
+  currentCalculate.value = currentCalt
 }
 const maskedIn = (val) => {
   return val.toString().replace('*', 'X')
