@@ -14,7 +14,7 @@ defineProps({
         <calculator-icon class="text-blue-500" />
         <p class="text-sm font-medium text-blue-500">计算器</p>
       </div>
-      <a href=""
+      <a href="https://github.com/Z-Yun-H/calculator"
          target="_blank"
          class="menu">
         <github-icon class="" />
