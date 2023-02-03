@@ -11,7 +11,7 @@ const lastOperation = ref('0')
 
 const getPercent = () => {
   let percent = currentCalculate.value.replace(',', '.') / 100
-  currentCalculate.value = percent.toString().replace('.', ',')
+  currentCalculate.value = percent.toString()
 }
 
 const allClear = () => {
