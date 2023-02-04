@@ -1,18 +1,18 @@
 <script setup>
-
 import { nextTick, ref } from 'vue';
-
-
+import { getPercent } from './composables/button.js'
+ 
 const histroryOperation = ref([])
-const currentCalculate = ref('0')
+// const currentCalculate = ref('0')
 const lastOperation = ref('0')
 
 
 
-const getPercent = () => {
-  let percent = currentCalculate.value.replace(',', '.') / 100
-  currentCalculate.value = percent.toString()
-}
+// const getPercent = () => {
+//   let percent = currentCalculate.value.replace(',', '.') / 100
+//   currentCalculate.value = percent.toString()
+// }
+
 
 const allClear = () => {
   currentCalculate.value = '0'
@@ -156,7 +156,8 @@ const deleteHistory = () => {
                         @click="doDelete()" />
           <button-input class="btn-primary"
                         symbols="%"
-                        @click="getPercent()" />
+                        @click="getPercent(currentCalculate)
+                        " />
           <button-input class="btn-primary"
                         symbols="/"
                         @click="inputValue('/')" />
