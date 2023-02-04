@@ -11,11 +11,12 @@
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.0.1",
-    "unimport": "^0.6.8",
-    "unplugin-vue-components": "^0.22.8",
     "autoprefixer": "^10.4.8",
     "postcss": "^8.4.16",
     "tailwindcss": "^3.1.8",
-    "vite": "^3.0.4"
+    "unimport": "^0.6.8",
+    "unplugin-vue-components": "^0.22.8",
+    "vite": "^3.0.4",
+    "vitest": "^0.28.4"
   }
 }
