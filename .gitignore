@@ -3,6 +3,8 @@
 .vite-ssg-temp
 *.local
 dist
+.npmrc
+.gitignore
 dist-ssr
 node_modules
 .idea/
