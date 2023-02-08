@@ -1,6 +1,6 @@
 <script setup>
 import { nextTick, ref } from 'vue';
-import { getPercent } from './composables/button.js'
+// import { getPercent } from './composables/button.js'
  
 const histroryOperation = ref([])
 // const currentCalculate = ref('0')
