@@ -8,10 +8,10 @@ const lastOperation = ref('0')
 
 
 
-// const getPercent = () => {
-//   let percent = currentCalculate.value.replace(',', '.') / 100
-//   currentCalculate.value = percent.toString()
-// }
+const getPercent = () => {
+  let percent = currentCalculate.value.replace(',', '.') / 100
+  currentCalculate.value = percent.toString()
+}
 
 
 const allClear = () => {
@@ -104,7 +104,6 @@ const maskedIn = (val) => {
 }
 const lastIsOperand = () => {
   let operand = currentCalculate.value.slice(-1)
-
   if (
     operand === '+' ||
     operand === '-' ||
