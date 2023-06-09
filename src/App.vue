@@ -3,7 +3,7 @@ import { nextTick, ref } from 'vue';
 // import { getPercent } from './composables/button.js'
  
 const histroryOperation = ref([])
-// const currentCalculate = ref('0')
+const currentCalculate = ref('0')
 const lastOperation = ref('0')
 
 
